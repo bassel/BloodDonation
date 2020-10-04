@@ -1,0 +1,324 @@
+[
+  {
+    "name": "Administration",
+    "phone_numbers": ["05468600", "05468601", "05925009"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Operations Room",
+    "phone_numbers": ["05924017", "05924018", "05924020", "05921675"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Regional O.R. (South)",
+    "phone_numbers": ["07325166", "07325458", "07325463"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Regional O.R. (North)",
+    "phone_numbers": ["06424520", "06424521", "06424522", "06425520", "06425521"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Spears",
+    "phone_numbers": ["01373453"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Tabaris",
+    "phone_numbers": ["01332100", "01332105", "01322985", "01444102"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Furn el Chebbak",
+    "phone_numbers": ["01280545"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Mreijeh",
+    "phone_numbers": ["01471140", "01471141", "01473627"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jounieh",
+    "phone_numbers": ["09832260", "09830799", "09931750"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Antelias",
+    "phone_numbers": ["04415532", "04411018", "04403202"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Kornet Chehwan",
+    "phone_numbers": ["04925444", "04925610", "04912860"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Beit Mery",
+    "phone_numbers": ["04972211", "04870712", "04873204", "04873052"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jbeil",
+    "phone_numbers": ["09945220", "09945813", "09540318"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jal el Dib",
+    "phone_numbers": ["04722010", "04722011", "04714229", "04712459"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Falougha",
+    "phone_numbers": ["05531129"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Zahleh",
+    "phone_numbers": ["08808145", "08800735", "08804892"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Kob Elias",
+    "phone_numbers": ["08500455", "08501466"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Baalbeck",
+    "phone_numbers": ["08377550", "08377551", "08374672"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jeb Jennine",
+    "phone_numbers": ["08660286", "08661055"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Hermel",
+    "phone_numbers": ["08200089", "08200023", "08201305"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Rachaya",
+    "phone_numbers": ["08592070", "08592070"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Mashgara",
+    "phone_numbers": ["08651018"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Saida",
+    "phone_numbers": ["07722532", "07725993"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jezzine",
+    "phone_numbers": ["07781201"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Jinsnaya",
+    "phone_numbers": ["07230709"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Nsarieh",
+    "phone_numbers": ["07390716"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Nabatieh",
+    "phone_numbers": ["07761853", "07765505"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Tripoli",
+    "phone_numbers": ["06602510", "06610861", "06211501", "06610026"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Batroun",
+    "phone_numbers": ["06742916", "06642502"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Amyoun",
+    "phone_numbers": ["06651503", "06651504"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Bcharre",
+    "phone_numbers": ["06671641", "06672504"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Zghorta",
+    "phone_numbers": ["06664003", "06663397", "06663903"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Halba",
+    "phone_numbers": ["06693969", "06692165"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Koubayet",
+    "phone_numbers": ["06350900"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Hrar",
+    "phone_numbers": ["06865508"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Baabda",
+    "phone_numbers": ["05468600", "05468601", "05925009"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Aley",
+    "phone_numbers": ["05556161"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Beit Eddine",
+    "phone_numbers": ["05507416"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Kabr Chmoun",
+    "phone_numbers": ["05410950"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Deir el Kamar",
+    "phone_numbers": ["05505519"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Hasbaya",
+    "phone_numbers": ["07551140"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Tyr",
+    "phone_numbers": ["07742265", "07348470"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Tebnine",
+    "phone_numbers": ["07326140"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Marjeyoun",
+    "phone_numbers": ["07831140"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Rmeich",
+    "phone_numbers": ["07470140"],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  },
+  {
+    "name": "Shebaa",
+    "phone_numbers": [""],
+    "location": "Beirut",
+    "latitude": "33.888630",
+    "longitude": "35.495480"
+  }
+]
