@@ -18,8 +18,8 @@ import '../utils/blood_types.dart';
 import '../widgets/action_button.dart';
 
 class EditProfileScreen extends StatefulWidget {
-  static const route = '/edit-profile';
-  const EditProfileScreen();
+  static const route = 'edit-profile';
+  const EditProfileScreen({Key key}) : super(key: key);
 
   @override
   _EditProfileScreenState createState() => _EditProfileScreenState();
@@ -177,8 +177,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       );
 
   Future _getImage() async {
-    final pickedFile = await picker.getImage(source: ImageSource.gallery);
-
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
       setState(() => _image = File(pickedFile.path));
     }
@@ -192,19 +191,17 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         String newProfileUrl;
         if (_image != null) {
           Fluttertoast.showToast(msg: 'Uploading Image...');
-          final snapshot = await FirebaseStorage.instance
+          final snapshot = FirebaseStorage.instance
               .ref()
               .child('avatars/${user.uid}')
               .putFile(_image)
-              .onComplete;
-          newProfileUrl = await snapshot.ref.getDownloadURL() as String;
+              .snapshot;
+          newProfileUrl = snapshot.ref.getDownloadURL() as String;
         }
         if (_nameController.text != _oldUser.displayName ||
             newProfileUrl != null) {
-          await user.updateProfile(
-            displayName: _nameController.text,
-            photoURL: newProfileUrl,
-          );
+          await user.updateDisplayName(_nameController.text);
+          await user.updatePhotoURL(newProfileUrl);
         }
         if (_emailController.text != _oldUser.email) {
           await user.updateEmail(_emailController.text);
@@ -223,9 +220,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       } on FirebaseException catch (e) {
         Fluttertoast.showToast(msg: e.message);
       } catch (e) {
-        Fluttertoast.showToast(
-          msg: 'Something went wrong. Please try again',
-        );
+        Fluttertoast.showToast(msg: 'Something went wrong. Please try again');
       }
       setState(() => _isLoading = false);
     }

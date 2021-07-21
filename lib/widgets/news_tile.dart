@@ -7,7 +7,12 @@ class NewsTile extends StatelessWidget {
   final String body;
   final String date;
 
-  const NewsTile({@required this.title, this.body, this.date});
+  const NewsTile({
+    Key key,
+    @required this.title,
+    this.body,
+    this.date,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

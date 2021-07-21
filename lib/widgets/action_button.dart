@@ -10,12 +10,13 @@ class ActionButton extends StatelessWidget {
   final double radius;
 
   const ActionButton({
+    Key key,
     @required this.callback,
     @required this.text,
     this.backgroundColor = MainColors.primary,
     this.isLoading = false,
     this.radius = 5.0,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +29,15 @@ class ActionButton extends StatelessWidget {
                 valueColor: AlwaysStoppedAnimation<Color>(MainColors.primary),
               ),
             )
-          : RaisedButton(
-              onPressed: callback,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(radius),
+          : ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(backgroundColor),
+                foregroundColor: MaterialStateProperty.all(Colors.white),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(radius),
+                )),
               ),
-              color: backgroundColor,
-              textColor: Colors.white,
-              disabledTextColor: Colors.white,
+              onPressed: callback,
               child: Text(text, style: const TextStyle(fontSize: 18)),
             ),
     );

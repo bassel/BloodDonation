@@ -14,8 +14,8 @@ import '../widgets/action_button.dart';
 import 'home_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
-  static const route = '/register';
-  const RegistrationScreen();
+  static const route = 'register';
+  const RegistrationScreen({Key key}) : super(key: key);
 
   @override
   _RegistrationScreenState createState() => _RegistrationScreenState();
@@ -153,9 +153,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           email: _emailController.text,
           password: _passController.text,
         );
-        await userCredential.user.updateProfile(
-          displayName: _nameController.text,
-        );
+        await userCredential.user.updateDisplayName(_nameController.text);
         final users = FirebaseFirestore.instance.collection('users');
         await users.doc(userCredential.user.uid).set({
           'bloodType': _bloodType,

@@ -6,8 +6,8 @@ import '../utils/validators.dart';
 import '../widgets/action_button.dart';
 
 class AddNewsItem extends StatefulWidget {
-  static const route = '/add-news';
-  const AddNewsItem();
+  static const route = 'add-news';
+  const AddNewsItem({Key key}) : super(key: key);
 
   @override
   _AddNewsItemState createState() => _AddNewsItemState();

@@ -9,9 +9,8 @@ import '../data/info_group.dart';
 import '../widgets/action_button.dart';
 
 class WhoCanDonateScreen extends StatelessWidget {
-  static const route = '/who-can-donate';
-
-  const WhoCanDonateScreen();
+  static const route = 'who-can-donate';
+  const WhoCanDonateScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

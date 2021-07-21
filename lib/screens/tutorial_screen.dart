@@ -9,8 +9,8 @@ import '../common/hive_boxes.dart';
 import 'login_screen.dart';
 
 class TutorialScreen extends StatefulWidget {
-  static const route = '/tutorial';
-  const TutorialScreen();
+  static const route = 'tutorial';
+  const TutorialScreen({Key key}) : super(key: key);
 
   @override
   _TutorialScreenState createState() => _TutorialScreenState();

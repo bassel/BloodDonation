@@ -18,6 +18,8 @@ import '../screens/profile_screen.dart';
 import '../screens/who_can_donate_screen.dart';
 
 class CustomDrawer extends StatefulWidget {
+  const CustomDrawer({Key key}) : super(key: key);
+
   @override
   _CustomDrawerState createState() => _CustomDrawerState();
 }

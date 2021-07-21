@@ -11,8 +11,8 @@ import '../widgets/action_button.dart';
 import '../widgets/medical_center_picker.dart';
 
 class AddBloodRequestScreen extends StatefulWidget {
-  static const route = '/add-request';
-  const AddBloodRequestScreen();
+  static const route = 'add-request';
+  const AddBloodRequestScreen({Key key}) : super(key: key);
 
   @override
   _AddBloodRequestScreenState createState() => _AddBloodRequestScreenState();

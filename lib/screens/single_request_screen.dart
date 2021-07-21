@@ -78,7 +78,12 @@ class SingleRequestScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: FlatButton.icon(
+                      child: TextButton.icon(
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all(
+                            MainColors.primaryDark,
+                          ),
+                        ),
                         onPressed: () async {
                           final url = 'https://www.google.com/maps/search/'
                               '?api=1&query=${request.medicalCenter.latitude},'
@@ -91,12 +96,16 @@ class SingleRequestScreen extends StatelessWidget {
                         },
                         icon: const Icon(Icons.navigation),
                         label: const Text('Get Directions'),
-                        textColor: MainColors.primaryDark,
                       ),
                     ),
                     const VerticalDivider(thickness: 1),
                     Expanded(
-                      child: FlatButton.icon(
+                      child: TextButton.icon(
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all(
+                            MainColors.primaryDark,
+                          ),
+                        ),
                         onPressed: () {
                           Share.share(
                             '${request.patientName} needs ${request.bloodType.name} '
@@ -108,7 +117,6 @@ class SingleRequestScreen extends StatelessWidget {
                         },
                         icon: const Icon(Icons.share),
                         label: const Text('Share'),
-                        textColor: MainColors.primaryDark,
                       ),
                     ),
                   ],
@@ -121,8 +129,18 @@ class SingleRequestScreen extends StatelessWidget {
                   vertical: 8,
                   horizontal: 24,
                 ),
-                child: RaisedButton(
-                  color: MainColors.primary,
+                child: ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                      MainColors.primary,
+                    ),
+                    padding: MaterialStateProperty.all(
+                      const EdgeInsets.all(12),
+                    ),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    )),
+                  ),
                   onPressed: () async {
                     final contact = 'tel:+961${request.contactNumber}';
                     if (await canLaunch(contact)) {
@@ -131,10 +149,6 @@ class SingleRequestScreen extends StatelessWidget {
                       Fluttertoast.showToast(msg: 'Something wrong happened');
                     }
                   },
-                  padding: const EdgeInsets.all(12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(24),
-                  ),
                   child: Center(
                     child: Text(
                       'Contact',
@@ -176,8 +190,18 @@ class _MarkFulfilledBtnState extends State<_MarkFulfilledBtn> {
           )
         : Padding(
             padding: const EdgeInsets.fromLTRB(24, 0, 24, 16),
-            child: RaisedButton(
-              color: Colors.green[600],
+            child: ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  Colors.green[600],
+                ),
+                padding: MaterialStateProperty.all(
+                  const EdgeInsets.all(12),
+                ),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                )),
+              ),
               onPressed: () async {
                 setState(() => _isLoading = true);
                 try {
@@ -196,10 +220,6 @@ class _MarkFulfilledBtnState extends State<_MarkFulfilledBtn> {
                 }
                 setState(() => _isLoading = false);
               },
-              padding: const EdgeInsets.all(12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(24),
-              ),
               child: Center(
                 child: Text(
                   'Mark as Fulfilled',

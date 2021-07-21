@@ -6,8 +6,8 @@ import '../utils/tools.dart';
 import '../widgets/news_tile.dart';
 
 class NewsScreen extends StatelessWidget {
-  static const route = '/news';
-  const NewsScreen();
+  static const route = 'news';
+  const NewsScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,9 @@ class NewsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('News and Tips')),
       body: SafeArea(
-        child: StreamBuilder<QuerySnapshot>(
+        child: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
           stream: news.orderBy('date', descending: true).limit(20).snapshots(),
-          builder:
-              (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+          builder: (context, snapshot) {
             if (snapshot.hasError) {
               return const Center(child: Text('Something went wrong'));
             }
@@ -33,7 +32,7 @@ class NewsScreen extends StatelessWidget {
             }
 
             return ListView(
-              children: snapshot.data.docs.map((DocumentSnapshot doc) {
+              children: snapshot.data.docs.map((doc) {
                 return NewsTile(
                   title: doc.data()['title'] as String,
                   body: doc.data()['body'] as String,

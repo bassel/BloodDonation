@@ -11,15 +11,17 @@ import 'blood_request_tile.dart';
 class SubmittedBloodRequests extends StatefulWidget {
   final bool activeOnly;
 
-  const SubmittedBloodRequests({Key key, this.activeOnly = true})
-      : super(key: key);
+  const SubmittedBloodRequests({
+    Key key,
+    this.activeOnly = true,
+  }) : super(key: key);
 
   @override
   _SubmittedBloodRequestsState createState() => _SubmittedBloodRequestsState();
 }
 
 class _SubmittedBloodRequestsState extends State<SubmittedBloodRequests> {
-  Future<QuerySnapshot> _submittedRequests;
+  Future<QuerySnapshot<Map<String, dynamic>>> _submittedRequests;
 
   @override
   void initState() {
@@ -43,7 +45,7 @@ class _SubmittedBloodRequestsState extends State<SubmittedBloodRequests> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<QuerySnapshot>(
+    return FutureBuilder<QuerySnapshot<Map<String, dynamic>>>(
       future: _submittedRequests,
       builder: (context, snapshot) {
         if (snapshot.hasError) {

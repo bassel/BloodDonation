@@ -16,7 +16,7 @@ class AllBloodRequests extends StatefulWidget {
 }
 
 class _AllBloodRequestsState extends State<AllBloodRequests> {
-  Stream<QuerySnapshot> _query;
+  Stream<QuerySnapshot<Map<String, dynamic>>> _query;
 
   @override
   void initState() {
@@ -31,7 +31,7 @@ class _AllBloodRequestsState extends State<AllBloodRequests> {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<QuerySnapshot>(
+    return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
       stream: _query,
       builder: (context, snapshot) {
         if (snapshot.hasError) {

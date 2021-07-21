@@ -13,8 +13,8 @@ import 'login_screen.dart';
 import 'tutorial_screen.dart';
 
 class SplashScreen extends StatefulWidget {
-  static const route = '/splash';
-  const SplashScreen();
+  static const route = '/';
+  const SplashScreen({Key key}) : super(key: key);
 
   @override
   _SplashScreenState createState() => _SplashScreenState();

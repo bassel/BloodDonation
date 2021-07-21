@@ -7,13 +7,13 @@ import '../widgets/all_blood_requests.dart';
 import '../widgets/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const route = '/home';
-  const HomeScreen();
+  static const route = 'home';
+  const HomeScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: CustomDrawer(),
+      drawer: const CustomDrawer(),
       appBar: AppBar(title: const Text('Blood Requests')),
       body: SafeArea(
         child: CustomScrollView(

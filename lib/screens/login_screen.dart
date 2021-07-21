@@ -13,8 +13,8 @@ import 'home_screen.dart';
 import 'registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
-  static const route = '/login';
-  const LoginScreen();
+  static const route = 'login';
+  const LoginScreen({Key key}) : super(key: key);
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -92,11 +92,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {
                       Navigator.pushNamed(context, RegistrationScreen.route);
                     },
-                    highlightColor: Colors.white38,
                     child: RichText(
                       text: const TextSpan(
                         text: 'New user? ',

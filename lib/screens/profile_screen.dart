@@ -13,8 +13,8 @@ import '../widgets/submitted_blood_requests.dart';
 import 'edit_profile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
-  static const route = '/profile';
-  const ProfileScreen();
+  static const route = 'profile';
+  const ProfileScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
